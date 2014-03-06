@@ -80,6 +80,8 @@ A typical whole-content template might look like this:
 
 Note that Statamic modifiers should have NO spaces between before or after the pipe ```'|'```!
 
+Also note that if you are chaining modifiers like "widont", this should come first in the chain so that the line lengths are evaluated accurately. In other words, the tag should look like ```{{content|pluck|widont}}```. 
+
 I'm already using these modifiers, and I did notice one oddball thing - if you put the excerpt-block termination string in the middle of a markdown blockquote ( after the > in markdown format), the Statamic parser does not finish off the blockquote tag and everything below it ends up in the blockquote. The way to avoid this is 
 
 1. either avoid using the termination string in the middle of a blockquote, 
