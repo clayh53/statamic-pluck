@@ -76,8 +76,19 @@ A typical whole-content template might look like this:
 	{{ content|unpluck }}
 </article>
 ```
+### Caveats and warnings
 
 Note that Statamic modifiers should have NO spaces between before or after the pipe ```'|'```!
+
+I'm already using these modifiers, and I did notice one oddball thing - if you put the excerpt-block termination string in the middle of a markdown blockquote ( after the > in markdown format), the Statamic parser does not finish off the blockquote tag and everything below it ends up in the blockquote. The way to avoid this is 
+
+1. either avoid using the termination string in the middle of a blockquote, 
+
+or
+
+2. make sure a blank line is between the end of the blockquote and the termination string.
+
+
 
 
 
