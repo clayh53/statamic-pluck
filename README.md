@@ -1,5 +1,7 @@
 ## Statamic add-on modifiers : chunk and unchunk
 
+### Note: the names of this modifier have changed!!
+
 ### Description
 
 This is a pair of super-simple statamic modifiers (filters) that allow the extraction of a contigous block of content from a page or post, without having to define a content variable that contains redundant information.
