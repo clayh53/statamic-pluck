@@ -7,7 +7,7 @@
  * @author  Clay Harmon
  *   
  */
-class Modifier_extract extends Modifier
+class Modifier_clay_pluck extends Modifier
 {
     public function index($value, $parameters=array())
     {
